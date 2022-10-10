@@ -1,0 +1,198 @@
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.input,
+.search-input {
+    background-color: #E7E7E7;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    width: 1390px;
+}
+
+.input {
+    border-right: none;
+}
+
+.search-input img {
+    height: 32px;
+    padding: 5px;
+}
+
+.tag-selected {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.taglist-selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: white;
+    width: auto;
+    height: 37px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.ingredient-selected {
+    background-color: #3282F7;
+}
+
+.appliance-selected {
+    background-color: #68D9A4;
+}
+
+.ustensils-selected {
+    background-color: #ED6454;
+}
+
+.taglist-img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.btn {
+    width: 170px;
+    height: 69px;
+    margin: 0 10px 20px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.arrow {
+    margin-left: 20px;
+    margin-right: -15px;
+}
+
+.ingredients,
+.ingredient-tag {
+    background-color: #3282F7;
+}
+
+.appliance,
+.appliance-tag {
+    background-color: #68D9A4;
+}
+
+.ustensils,
+.ustensils-tag {
+    background-color: #ED6454;
+}
+
+.ingredient-tag {
+    display: none;
+    width: 66%;
+}
+
+.appliance-tag {
+    display: none;
+    margin-left: 175px;
+    color: white;
+    width: 66%;
+}
+
+.ustensils-tag {
+    display: none;
+    margin-left: 349px;
+    color: white;
+    width: 66%;
+}
+
+.dropdown-input {
+    border: none;
+    background: transparent;
+    color: #fff;
+    width: 200px;
+    margin-left: 30px;
+}
+
+.dropdown-input::placeholder {
+    color: #fff;
+}
+
+.dropdown-item-list {
+    min-height: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100px;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+.taglist {
+    color: white;
+    cursor: pointer;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    min-width: 450px;
+    max-height: 400px;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+    background-color: #E7E7E7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.cooking-icon {
+    margin-left: 5px;
+}
+
+.recipe-content {
+    display: flex;
+}
+
+.ingredient-list {
+    flex: 2;
+    padding: 0;
+    font-size: 11px;
+    list-style: none;
+}
+
+.recipe-description {
+    font-size: 11px;
+    flex: 2;
+    text-align: justify;
+}

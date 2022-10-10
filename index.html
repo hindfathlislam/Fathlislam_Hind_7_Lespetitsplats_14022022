@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Petits Plats</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+ 
+<body>
+    <div class="container">
+        <header class=" header ">
+            <img src="images/logo.svg " alt=" " class="logo ">
+        </header>
+
+        <main class="main ">
+            <section class="search">
+                <div class="input-group ">
+                    <input type="text" class="form-control input " placeholder="Rechercher une recette ">
+                    <span class="input-group-text search-input "><img src="images/search.svg " alt=" "></span>
+                </div>
+
+                <ul class="tag-selected">
+                </ul>
+            </section>
+
+            <section class="tags">
+                <div class="btn-tags">
+                    <button type="button" class="btn btn-primary ingredients m-0 ">Ingrédients <img src="images/arrow.svg " alt=" " class="arrow "></button>
+                    <button type="button" class="btn btn-success appliance m-0 ">Appareils<img src="images/arrow.svg " alt=" " class="arrow "></button>
+                    <button type="button" class="btn btn-danger ustensils m-0">Ustensiles <img src="images/arrow.svg " alt=" " class="arrow "></button>
+                </div>
+
+                <div class="ingredient-tag">
+                    <input type="text" class="dropdown-input" id="ingredient-input" name="ingredient-input" placeholder="Rechercher un ingrédient">
+                    <ul class="dropdown-item-list ingredient-items">
+                    </ul>
+                </div>
+
+                <div class="appliance-tag">
+                    <input type="text" class="dropdown-input" id="appliance-input" name="appliance-input" placeholder="Rechercher un appareil">
+                    <ul class="dropdown-item-list appliance-items"></ul>
+                </div>
+
+                <div class="ustensils-tag">
+                    <input type="text" class="dropdown-input" id="ustensils-input" name="ustensils-input" placeholder="Rechercher un outil">
+                    <ul class="dropdown-item-list ustensils-items"></ul>
+                </div>
+            </section>
+
+            <section class="recipes"></section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous"></script>
+    <script src="scripts/factories/recipesFactory.js "></script>
+    <script src="scripts/pages/index.js "></script>
+    <script src="scripts/pages/ingredients.js"></script>
+    <script src="scripts/pages/appliances.js"></script>
+    <script src="scripts/pages/ustensils.js"></script>
+    <script src="scripts/pages/searchByTags.js"></script>
+    <script src="scripts/pages/research.js"></script>
+</body>
+
+</html>
